@@ -9,6 +9,11 @@
   "bin": {
     "create-dtable-plugin": "bin/index.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "package.json"
+  ],
   "author": "seafile",
   "license": "ISC",
   "dependencies": {
