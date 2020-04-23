@@ -1,0 +1,20 @@
+{
+  "name": "create-dtable-plugin",
+  "version": "0.0.1",
+  "description": "dtable plugin cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-dtable-plugin": "bin/index.js"
+  },
+  "author": "seafile",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "commander": "^5.0.0",
+    "inquirer": "^7.1.0",
+    "ora": "^4.0.4"
+  }
+}
