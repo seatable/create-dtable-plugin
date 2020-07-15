@@ -3,6 +3,7 @@
 const program = require('commander');
 const process1 = require('child_process');
 const ora = require('ora');
+const rm = require('rimraf').sync
 
 const spinner = ora();
 const gitUrl = 'https://github.com/seatable/seatable-plugin-template.git';
@@ -17,6 +18,8 @@ program.version('0.0.1', '-v, --version')
             console.log('exec error: ' + error);
             return;
           }
+          
+          rm(name + '/.git');
           console.log(stdout);
           spinner.stop();
           console.log('loading template success');
