@@ -12,14 +12,15 @@ program.version('0.0.1', '-v, --version')
     .command('init <name>')
     .action((name) => {
         console.log('start loading template');
+        const projectName = name;
         spinner.start('clone template ...');
-        process1.exec('git clone ' + gitUrl + ' ' + name, function(error, stdout, stderr) {
+        process1.exec('git clone ' + gitUrl + ' ' + './' + projectName, function(error, stdout, stderr) {
           if (error !== null) {
             console.log('exec error: ' + error);
             return;
           }
           
-          rm(name + '/.git');
+          rm('./' + projectName + '/.git');
           console.log(stdout);
           spinner.stop();
           console.log('loading template success');
