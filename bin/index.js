@@ -8,7 +8,7 @@ const execSync = require('child_process').execSync;
 const path = require('path');
 
 const spinner = ora();
-const gitUrl = 'git@github.com:seatable/seatable-plugin-template.git';
+const gitUrl = 'https://github.com/seatable/seatable-plugin-template.git';
 
 program
   .version(require('../package').version, '-v, --version')
