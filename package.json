@@ -1,6 +1,6 @@
 {
   "name": "create-dtable-plugin",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "dtable plugin cli",
   "main": "index.js",
   "scripts": {
