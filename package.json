@@ -19,7 +19,7 @@
   "dependencies": {
     "child_process": "^1.0.2",
     "commander": "^5.0.0",
-    "inquirer": "^7.1.0",
+    "inquirer": "^13.2.1",
     "ora": "^4.0.4",
     "rimraf": "^3.0.2"
   }
